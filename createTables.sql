@@ -1,4 +1,4 @@
--- Active: 1702499942668@@mysql-x-cyl.alwaysdata.net@3306@x-cyl_gestion_vols
+-- Active: 1705485833143@@mysql-x-cyl.alwaysdata.net@3306@x-cyl_gestion_vols
 
 #créating all tables
 
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS user_function (user_function_id INT PRIMARY KEY AUTO_
                                           type_function VARCHAR(30) NOT NULL,
                                           permission_id INT NOT NULL);
 
-CREATE TABLE IF NOT EXISTS permission(permission_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+CREATE TABLE IF NOT EXISTS permission (permission_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
                                       permission VARCHAR(30) NOT NULL);
 
 CREATE TABLE IF NOT EXISTS complaint (complaint_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -67,6 +67,8 @@ CREATE TABLE IF NOT EXISTS observations (observation_id INT PRIMARY KEY AUTO_INC
 CREATE TABLE IF NOT EXISTS scan_complaint (scann_complaint_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
                     scan_complaint_link VARCHAR(100) NOT NULL);
 
+#it will modifie "scann_complaint_id" to "scan_complaint_id"
+
 CREATE TABLE IF NOT EXISTS state_service (state_service_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
                     Type_service VARCHAR(50) NOT NULL);
 
@@ -79,4 +81,13 @@ CREATE TABLE IF NOT EXISTS town (town_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL
 CREATE TABLE IF NOT EXISTS place_kind (place_kind_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
                     type_kind VARCHAR(30) NOT NULL);
 
-# insert datas into tables for testing future request
+
+# create vues with joints 
+
+
+
+
+
+
+
+
