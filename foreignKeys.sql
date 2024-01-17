@@ -25,6 +25,12 @@ ADD replaced_items_id INT NOT NULL;
 ALTER TABLE report_of_theft
 ADD CONSTRAINT FK_replaced_items_id FOREIGN KEY (replaced_items_id) REFERENCES replaced_by(replaced_items_id);
 
+ALTER TABLE report_of_theft
+ADD CONSTRAINT FK_complaint_id FOREIGN KEY (complaint_id) REFERENCES complaint(complaint_id);
+
+ALTER TABLE report_of_theft
+ADD CONSTRAINT FK_model_id FOREIGN KEY(model_id) REFERENCES model(model_id);
+
 
 ALTER TABLE user_function
 ADD permission_id INT NOT NULL;
