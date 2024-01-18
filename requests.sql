@@ -1,4 +1,4 @@
--- Active: 1702499942668@@mysql-x-cyl.alwaysdata.net@3306@x-cyl_gestion_vols
+-- Active: 1702556182817@@mysql-x-cyl.alwaysdata.net@3306@x-cyl_gestion_vols
 
 #créating all tables
 
@@ -79,4 +79,15 @@ CREATE TABLE IF NOT EXISTS town (town_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL
 CREATE TABLE IF NOT EXISTS place_kind (place_kind_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
                     type_kind VARCHAR(30) NOT NULL);
 
+
+SHOW TABLES;
+
+SELECT * FROM place_kind;
+
 # insert datas into tables for testing future request
+
+INSERT INTO place_kind(type_kind)
+VALUES ("LOGISTIQUE"),
+       ("VEHICULE"),
+       ("CHANTIER"),
+       ("AGENCE");
