@@ -23,6 +23,17 @@ VALUE("laser", 1),
      ("convertisseur", 4),
      ("ponceuse plafond", 5);
 
+INSERT INTO model(model, model_new_value, model_residual_value, model_qty, type_model_id)
+VALUE("PLC 300", 21000, 18000, 1, 2);
+     
+
+
+
+
 
 SELECT * FROM type_model;
+
+UPDATE  model
+SET model = "Rugby 100"
+WHERE model_id = 1;
 
